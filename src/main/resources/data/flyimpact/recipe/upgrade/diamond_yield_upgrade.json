@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:diamond"
+    },
+    "C": {
+      "item": "flyimpact:emerald_yield_upgrade"
+    }
+  },
+  "pattern": [
+    "RRR",
+    "RCR",
+    "RRR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "flyimpact:diamond_yield_upgrade"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:copper_ingot"
+    },
+    "C": {
+      "item": "flyimpact:poop_yield_upgrade"
+    }
+  },
+  "pattern": [
+    "RRR",
+    "RCR",
+    "RRR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "flyimpact:copper_yield_upgrade"
+  }
+}

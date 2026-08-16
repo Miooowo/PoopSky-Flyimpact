@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "flyimpact:copper_yield_upgrade"
+    }
+  },
+  "pattern": [
+    "RRR",
+    "RCR",
+    "RRR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "flyimpact:iron_yield_upgrade"
+  }
+}

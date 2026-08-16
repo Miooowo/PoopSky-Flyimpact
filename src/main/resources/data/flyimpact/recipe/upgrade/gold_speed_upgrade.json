@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:gold_ingot"
+    },
+    "C": {
+      "item": "flyimpact:iron_speed_upgrade"
+    }
+  },
+  "pattern": [
+    "RRR",
+    "RCR",
+    "RRR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "flyimpact:gold_speed_upgrade"
+  }
+}

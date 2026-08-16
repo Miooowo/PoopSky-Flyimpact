@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "touhou_little_maid"
+    }
+  ],
+  "type": "poopsky:fly_barrel",
+  "fly_type": "fairy",
+  "result": {
+    "count": 1,
+    "id": "touhou_little_maid:power_point"
+  }
+}
