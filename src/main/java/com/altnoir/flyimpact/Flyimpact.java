@@ -31,9 +31,11 @@ public class Flyimpact {
 
     public Flyimpact(IEventBus modEventBus, ModContainer modContainer) {
         FlyimpactItems.register(modEventBus);
+        FlyimpactComponents.register(modEventBus);
         NeoForge.EVENT_BUS.addListener(FlyTypeInjector::onAddReloadListeners);
         NeoForge.EVENT_BUS.addListener(FlyTypeInjector::onDatapackSync);
         NeoForge.EVENT_BUS.addListener(FlyFeeding::onEntityInteract);
+        NeoForge.EVENT_BUS.addListener(FlyLineageEvents::onItemTooltip);
         LOGGER.info("PoopSky: Flyimpact loaded");
     }
 }

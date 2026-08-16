@@ -4,11 +4,14 @@
   "package": "com.altnoir.flyimpact.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "BreedingChestBlockEntityMixin",
     "FlyBarrelBlockEntityMixin",
     "FlyBarrelBlockMixin",
     "FlyBarrelMenuMixin"
   ],
   "client": [
+    "BreedingChestScreenMixin",
+    "BreedingChestRecipeCategoryMixin",
     "FlyBarrelScreenMixin",
     "FlyBarrelRecipeCategoryMixin"
   ],
