@@ -1,0 +1,30 @@
+{
+  "name": "fly_type.poopsky.leather",
+  "icon": "poopsky:fly[poopsky:fly_type=\"leather\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 0,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.leather.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"brown\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"white\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"leather\"]",
+      "text": "patchouli.flyimpact.fly.leather.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/brown",
+        "flyimpact:flies/white"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.leather.relations"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "fly_type.poopsky.osmium",
+  "icon": "poopsky:fly[poopsky:fly_type=\"osmium\"]",
+  "category": "flyimpact:ore",
+  "sortnum": 9,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.osmium.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"diamond\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"lead\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"osmium\"]",
+      "text": "patchouli.flyimpact.fly.osmium.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/diamond",
+        "flyimpact:flies/lead",
+        "flyimpact:flies/fluorite"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.osmium.relations"
+    }
+  ],
+  "flag": "mod:mekanism"
+}

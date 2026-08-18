@@ -1,0 +1,6 @@
+{
+  "name": "patchouli.flyimpact.category.ore",
+  "description": "patchouli.flyimpact.category.ore.desc",
+  "icon": "poopsky:fly[poopsky:fly_type=\"iron\"]",
+  "sortnum": 2
+}

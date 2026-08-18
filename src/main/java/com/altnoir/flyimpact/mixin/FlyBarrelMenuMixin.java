@@ -3,6 +3,7 @@ package com.altnoir.flyimpact.mixin;
 import com.altnoir.flyimpact.barrel.FlyBarrelContainerAccess;
 import com.altnoir.flyimpact.barrel.UpgradeContainer;
 import com.altnoir.flyimpact.item.UpgradeModuleItem;
+import com.altnoir.flyimpact.upgrade.UpgradePanelLayout;
 import com.altnoir.poopsky.client.inventory.FlyBarrelMenu;
 import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
@@ -23,9 +24,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(FlyBarrelMenu.class)
 public abstract class FlyBarrelMenuMixin extends AbstractContainerMenu {
     @Unique
-    private static final int FLYIMPACT_UPGRADE_X = 8;
+    private static final int FLYIMPACT_YIELD_INDEX = 41;
     @Unique
-    private static final int FLYIMPACT_UPGRADE_Y = 20;
+    private static final int FLYIMPACT_PLAYER_START = 5;
+    @Unique
+    private static final int FLYIMPACT_PLAYER_END = 41;
 
     protected FlyBarrelMenuMixin(MenuType<?> menuType, int containerId) {
         super(menuType, containerId);
@@ -36,10 +39,11 @@ public abstract class FlyBarrelMenuMixin extends AbstractContainerMenu {
             at = @At("TAIL")
     )
     private void flyimpact$addUpgradeSlot(MenuType<?> menuType, int containerId, Inventory playerInventory, Container container, ContainerData data, CallbackInfo ci) {
-        Container upgradeContainer = container instanceof FlyBarrelContainerAccess access
+        Container machine = this.slots.isEmpty() ? container : this.slots.get(0).container;
+        Container upgradeContainer = machine instanceof FlyBarrelContainerAccess access
                 ? new UpgradeContainer(access.flyimpact$upgradeAccess())
                 : new SimpleContainer(1);
-        this.addSlot(new Slot(upgradeContainer, 0, FLYIMPACT_UPGRADE_X, FLYIMPACT_UPGRADE_Y) {
+        this.addSlot(new Slot(upgradeContainer, 0, UpgradePanelLayout.SLOT_X, UpgradePanelLayout.slotY(0)) {
             @Override
             public boolean mayPlace(ItemStack stack) {
                 return UpgradeModuleItem.isUpgrade(stack);
@@ -54,7 +58,6 @@ public abstract class FlyBarrelMenuMixin extends AbstractContainerMenu {
 
     @Inject(method = "quickMoveStack", at = @At("HEAD"), cancellable = true)
     private void flyimpact$quickMoveUpgrade(Player player, int index, CallbackInfoReturnable<ItemStack> cir) {
-        int upgradeIndex = this.slots.size() - 1;
         if (index < 0 || index >= this.slots.size()) {
             return;
         }
@@ -64,16 +67,16 @@ public abstract class FlyBarrelMenuMixin extends AbstractContainerMenu {
         }
         ItemStack source = slot.getItem();
         ItemStack copy = source.copy();
-        if (index == upgradeIndex) {
-            if (!this.moveItemStackTo(source, 5, upgradeIndex, true)) {
+        if (index == FLYIMPACT_YIELD_INDEX) {
+            if (!this.moveItemStackTo(source, FLYIMPACT_PLAYER_START, FLYIMPACT_PLAYER_END, true)) {
                 cir.setReturnValue(ItemStack.EMPTY);
                 return;
             }
             flyimpact$finishMove(slot, source, copy, player, cir);
             return;
         }
-        if (index >= 5 && UpgradeModuleItem.isUpgrade(source)) {
-            if (!this.moveItemStackTo(source, upgradeIndex, upgradeIndex + 1, false)) {
+        if (index >= FLYIMPACT_PLAYER_START && index < FLYIMPACT_PLAYER_END && UpgradeModuleItem.isUpgrade(source)) {
+            if (!this.moveItemStackTo(source, FLYIMPACT_YIELD_INDEX, FLYIMPACT_YIELD_INDEX + 1, false)) {
                 return;
             }
             flyimpact$finishMove(slot, source, copy, player, cir);

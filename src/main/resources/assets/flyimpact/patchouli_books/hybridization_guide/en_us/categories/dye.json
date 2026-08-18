@@ -1,0 +1,6 @@
+{
+  "name": "patchouli.flyimpact.category.dye",
+  "description": "patchouli.flyimpact.category.dye.desc",
+  "icon": "poopsky:fly[poopsky:fly_type=\"red\"]",
+  "sortnum": 1
+}

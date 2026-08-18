@@ -1,0 +1,33 @@
+{
+  "name": "fly_type.poopsky.copper",
+  "icon": "poopsky:fly[poopsky:fly_type=\"copper\"]",
+  "category": "flyimpact:ore",
+  "sortnum": 0,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.copper.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"white\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"orange\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"copper\"]",
+      "text": "patchouli.flyimpact.fly.copper.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/white",
+        "flyimpact:flies/orange",
+        "flyimpact:flies/black",
+        "flyimpact:flies/iron",
+        "flyimpact:flies/gold"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.copper.relations"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "fly_type.poopsky.pink",
+  "icon": "poopsky:fly[poopsky:fly_type=\"pink\"]",
+  "category": "flyimpact:dye",
+  "sortnum": 11,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.pink.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"white\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"red\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"pink\"]",
+      "text": "patchouli.flyimpact.fly.pink.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/white",
+        "flyimpact:flies/red",
+        "flyimpact:flies/magenta",
+        "flyimpact:flies/fairy"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.pink.relations"
+    }
+  ]
+}

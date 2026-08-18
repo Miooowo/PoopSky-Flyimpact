@@ -1,6 +1,5 @@
 package com.altnoir.flyimpact.mixin;
 
-import com.altnoir.flyimpact.FlyLineage;
 import com.altnoir.poopsky.client.inventory.BreedingChestMenu;
 import com.altnoir.poopsky.client.inventory.BreedingChestScreen;
 import com.altnoir.poopsky.content.item.p.FlyItem;
@@ -45,14 +44,7 @@ public abstract class BreedingChestScreenMixin extends AbstractContainerScreen<B
         int bob = (int) Math.round(Math.sin((time + partialTick) / 6.0F) * 2.0F);
         graphics.blit(FLYIMPACT_HEART, x + 95, y + 16 + bob, 0, 0, 8, 8, 8, 8);
 
-        ItemStack parent1 = this.menu.slots.get(1).getItem();
-        ItemStack parent2 = this.menu.slots.get(2).getItem();
-        if (!FlyItem.isFlyItem(parent1) || !FlyItem.isFlyItem(parent2)) {
-            return;
-        }
-        Component stage = flyimpact$stage(progress, maxProgress)
-                .copy()
-                .withStyle(ChatFormatting.DARK_GRAY);
+        Component stage = flyimpact$stage(progress, maxProgress).copy().withStyle(ChatFormatting.DARK_GRAY);
         graphics.drawString(this.font, stage, x + 84, y + 8, 0x404040, false);
     }
 
@@ -74,11 +66,10 @@ public abstract class BreedingChestScreenMixin extends AbstractContainerScreen<B
         lines.add(Component.literal(String.format("%.1f%%", progress * 100.0F / maxProgress)).withStyle(ChatFormatting.GRAY));
         lines.add(flyimpact$stage(progress, maxProgress).copy().withStyle(ChatFormatting.DARK_GRAY));
         if (FlyItem.isFlyItem(parent1) && FlyItem.isFlyItem(parent2)) {
-            boolean purifying = FlyLineage.sameVariety(parent1, parent2);
-            lines.add(Component.translatable(purifying
+            boolean sameVariety = FlyItem.getFlyType(parent1).id().equals(FlyItem.getFlyType(parent2).id());
+            lines.add(Component.translatable(sameVariety
                     ? "tooltip.flyimpact.breeding.purifying"
-                    : "tooltip.flyimpact.breeding.crossing").withStyle(purifying ? ChatFormatting.GREEN : ChatFormatting.YELLOW));
-            lines.add(FlyLineage.generationLabel(FlyLineage.childGeneration(parent1, parent2)).withStyle(ChatFormatting.GRAY));
+                    : "tooltip.flyimpact.breeding.crossing").withStyle(sameVariety ? ChatFormatting.GREEN : ChatFormatting.YELLOW));
         }
         graphics.renderComponentTooltip(this.font, lines, mouseX, mouseY);
         ci.cancel();

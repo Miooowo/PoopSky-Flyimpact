@@ -1,0 +1,30 @@
+{
+  "name": "fly_type.poopsky.rotten_flesh",
+  "icon": "poopsky:fly[poopsky:fly_type=\"rotten_flesh\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 1,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.rotten_flesh.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"brown\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"orange\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"rotten_flesh\"]",
+      "text": "patchouli.flyimpact.fly.rotten_flesh.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/brown",
+        "flyimpact:flies/orange"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.rotten_flesh.relations"
+    }
+  ]
+}

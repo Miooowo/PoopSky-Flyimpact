@@ -1,0 +1,30 @@
+{
+  "name": "fly_type.poopsky.blaze",
+  "icon": "poopsky:fly[poopsky:fly_type=\"blaze\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 2,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.blaze.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"dragon_fruit\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"orange\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"blaze\"]",
+      "text": "patchouli.flyimpact.fly.blaze.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/dragon_fruit",
+        "flyimpact:flies/orange"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.blaze.relations"
+    }
+  ]
+}

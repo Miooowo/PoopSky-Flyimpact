@@ -47,3 +47,10 @@ type = "optional"
 versionRange = "[1.0.0,)"
 ordering = "NONE"
 side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "patchouli"
+type = "optional"
+versionRange = "[1.21-87,)"
+ordering = "AFTER"
+side = "BOTH"

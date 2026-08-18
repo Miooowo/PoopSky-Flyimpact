@@ -1,0 +1,32 @@
+{
+  "name": "fly_type.poopsky.glowstone",
+  "icon": "poopsky:fly[poopsky:fly_type=\"glowstone\"]",
+  "category": "flyimpact:special",
+  "sortnum": 1,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.glowstone.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"dragon_fruit\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"yellow\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"glowstone\"]",
+      "text": "patchouli.flyimpact.fly.glowstone.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/dragon_fruit",
+        "flyimpact:flies/yellow",
+        "flyimpact:flies/gold",
+        "flyimpact:flies/sky_dust"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.glowstone.relations"
+    }
+  ]
+}

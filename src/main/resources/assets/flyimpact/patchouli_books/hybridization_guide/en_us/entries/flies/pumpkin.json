@@ -1,0 +1,30 @@
+{
+  "name": "fly_type.poopsky.pumpkin",
+  "icon": "poopsky:fly[poopsky:fly_type=\"pumpkin\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 4,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.pumpkin.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"yellow\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"orange\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"pumpkin\"]",
+      "text": "patchouli.flyimpact.fly.pumpkin.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/yellow",
+        "flyimpact:flies/orange"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.pumpkin.relations"
+    }
+  ]
+}

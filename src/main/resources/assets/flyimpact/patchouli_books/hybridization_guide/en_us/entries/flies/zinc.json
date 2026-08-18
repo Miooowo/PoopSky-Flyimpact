@@ -1,0 +1,31 @@
+{
+  "name": "fly_type.poopsky.zinc",
+  "icon": "poopsky:fly[poopsky:fly_type=\"zinc\"]",
+  "category": "flyimpact:ore",
+  "sortnum": 6,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.zinc.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"cyan\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"iron\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"zinc\"]",
+      "text": "patchouli.flyimpact.fly.zinc.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/cyan",
+        "flyimpact:flies/iron"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.zinc.relations"
+    }
+  ],
+  "flag": "mod:create"
+}

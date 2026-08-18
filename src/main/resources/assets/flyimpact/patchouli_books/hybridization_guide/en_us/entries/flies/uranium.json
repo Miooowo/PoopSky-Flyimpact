@@ -1,0 +1,31 @@
+{
+  "name": "fly_type.poopsky.uranium",
+  "icon": "poopsky:fly[poopsky:fly_type=\"uranium\"]",
+  "category": "flyimpact:ore",
+  "sortnum": 10,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.uranium.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"dragon_fruit\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"emerald\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"uranium\"]",
+      "text": "patchouli.flyimpact.fly.uranium.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/dragon_fruit",
+        "flyimpact:flies/emerald"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.uranium.relations"
+    }
+  ],
+  "flag": "mod:mekanism"
+}

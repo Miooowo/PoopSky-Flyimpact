@@ -1,0 +1,32 @@
+{
+  "name": "fly_type.poopsky.gold",
+  "icon": "poopsky:fly[poopsky:fly_type=\"gold\"]",
+  "category": "flyimpact:ore",
+  "sortnum": 2,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.gold.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"glowstone\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"copper\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"gold\"]",
+      "text": "patchouli.flyimpact.fly.gold.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/glowstone",
+        "flyimpact:flies/copper",
+        "flyimpact:flies/emerald",
+        "flyimpact:flies/diamond"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.gold.relations"
+    }
+  ]
+}

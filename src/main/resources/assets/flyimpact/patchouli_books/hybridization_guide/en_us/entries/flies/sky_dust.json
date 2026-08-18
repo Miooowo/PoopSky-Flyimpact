@@ -1,0 +1,31 @@
+{
+  "name": "fly_type.poopsky.sky_dust",
+  "icon": "poopsky:fly[poopsky:fly_type=\"sky_dust\"]",
+  "category": "flyimpact:ore",
+  "sortnum": 13,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.sky_dust.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"black\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"glowstone\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"sky_dust\"]",
+      "text": "patchouli.flyimpact.fly.sky_dust.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/black",
+        "flyimpact:flies/glowstone"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.sky_dust.relations"
+    }
+  ],
+  "flag": "mod:ae2"
+}

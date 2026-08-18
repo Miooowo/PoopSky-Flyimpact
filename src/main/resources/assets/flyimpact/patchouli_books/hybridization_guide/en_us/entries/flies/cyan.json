@@ -1,0 +1,32 @@
+{
+  "name": "fly_type.poopsky.cyan",
+  "icon": "poopsky:fly[poopsky:fly_type=\"cyan\"]",
+  "category": "flyimpact:dye",
+  "sortnum": 14,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.cyan.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"green\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"blue\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"cyan\"]",
+      "text": "patchouli.flyimpact.fly.cyan.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/green",
+        "flyimpact:flies/blue",
+        "flyimpact:flies/ender",
+        "flyimpact:flies/zinc"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.cyan.relations"
+    }
+  ]
+}

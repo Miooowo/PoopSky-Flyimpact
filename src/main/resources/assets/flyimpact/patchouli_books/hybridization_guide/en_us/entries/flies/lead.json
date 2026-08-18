@@ -1,0 +1,32 @@
+{
+  "name": "fly_type.poopsky.lead",
+  "icon": "poopsky:fly[poopsky:fly_type=\"lead\"]",
+  "category": "flyimpact:ore",
+  "sortnum": 8,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.lead.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"iron\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"tin\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"lead\"]",
+      "text": "patchouli.flyimpact.fly.lead.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/iron",
+        "flyimpact:flies/tin",
+        "flyimpact:flies/osmium"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.lead.relations"
+    }
+  ],
+  "flag": "mod:mekanism"
+}

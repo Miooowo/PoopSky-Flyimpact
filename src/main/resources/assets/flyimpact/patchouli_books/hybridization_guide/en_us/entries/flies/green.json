@@ -1,0 +1,25 @@
+{
+  "name": "fly_type.poopsky.green",
+  "icon": "poopsky:fly[poopsky:fly_type=\"green\"]",
+  "category": "flyimpact:dye",
+  "sortnum": 4,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.green.text"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/lime",
+        "flyimpact:flies/yellow",
+        "flyimpact:flies/cyan",
+        "flyimpact:flies/dragon_fruit",
+        "flyimpact:flies/wheat"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.green.relations"
+    }
+  ]
+}

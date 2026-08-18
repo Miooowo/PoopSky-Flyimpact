@@ -1,0 +1,31 @@
+{
+  "name": "fly_type.poopsky.fairy",
+  "icon": "poopsky:fly[poopsky:fly_type=\"fairy\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 5,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.fairy.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"red\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"pink\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"fairy\"]",
+      "text": "patchouli.flyimpact.fly.fairy.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/red",
+        "flyimpact:flies/pink"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.fairy.relations"
+    }
+  ],
+  "flag": "mod:touhou_little_maid"
+}

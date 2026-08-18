@@ -1,0 +1,10 @@
+{
+  "type": "flyimpact:hybridization_guide",
+  "category": "misc",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "patchouli"
+    }
+  ]
+}

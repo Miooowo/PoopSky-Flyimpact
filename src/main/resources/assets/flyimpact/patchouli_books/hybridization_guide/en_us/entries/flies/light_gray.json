@@ -1,0 +1,32 @@
+{
+  "name": "fly_type.poopsky.light_gray",
+  "icon": "poopsky:fly[poopsky:fly_type=\"light_gray\"]",
+  "category": "flyimpact:dye",
+  "sortnum": 10,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.light_gray.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"white\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"gray\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"light_gray\"]",
+      "text": "patchouli.flyimpact.fly.light_gray.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/white",
+        "flyimpact:flies/gray",
+        "flyimpact:flies/iron",
+        "flyimpact:flies/tin"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.light_gray.relations"
+    }
+  ]
+}

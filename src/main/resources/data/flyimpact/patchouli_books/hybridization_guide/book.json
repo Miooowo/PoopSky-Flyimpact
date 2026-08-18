@@ -1,0 +1,14 @@
+{
+  "name": "item.flyimpact.hybridization_guide",
+  "landing_text": "patchouli.flyimpact.landing",
+  "subtitle": "patchouli.flyimpact.subtitle",
+  "creative_tab": "flyimpact:main",
+  "dont_generate_book": true,
+  "custom_book_item": "flyimpact:hybridization_guide",
+  "show_progress": false,
+  "i18n": true,
+  "use_resource_pack": true,
+  "book_texture": "patchouli:textures/gui/book_brown.png",
+  "model": "flyimpact:hybridization_guide",
+  "version": 1
+}

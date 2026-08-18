@@ -1,0 +1,33 @@
+{
+  "name": "fly_type.poopsky.emerald",
+  "icon": "poopsky:fly[poopsky:fly_type=\"emerald\"]",
+  "category": "flyimpact:ore",
+  "sortnum": 3,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.emerald.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"lime\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"gold\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"emerald\"]",
+      "text": "patchouli.flyimpact.fly.emerald.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/lime",
+        "flyimpact:flies/gold",
+        "flyimpact:flies/diamond",
+        "flyimpact:flies/netherite",
+        "flyimpact:flies/uranium"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.emerald.relations"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "fly_type.poopsky.certus",
+  "icon": "poopsky:fly[poopsky:fly_type=\"certus\"]",
+  "category": "flyimpact:ore",
+  "sortnum": 12,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.certus.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"light_blue\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"diamond\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"certus\"]",
+      "text": "patchouli.flyimpact.fly.certus.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/light_blue",
+        "flyimpact:flies/diamond"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.certus.relations"
+    }
+  ],
+  "flag": "mod:ae2"
+}

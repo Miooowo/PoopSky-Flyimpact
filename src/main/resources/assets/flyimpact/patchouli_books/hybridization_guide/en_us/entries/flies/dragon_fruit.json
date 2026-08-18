@@ -1,0 +1,33 @@
+{
+  "name": "fly_type.poopsky.dragon_fruit",
+  "icon": "poopsky:fly[poopsky:fly_type=\"dragon_fruit\"]",
+  "category": "flyimpact:special",
+  "sortnum": 0,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.dragon_fruit.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"green\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"yellow\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"dragon_fruit\"]",
+      "text": "patchouli.flyimpact.fly.dragon_fruit.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/green",
+        "flyimpact:flies/yellow",
+        "flyimpact:flies/glowstone",
+        "flyimpact:flies/uranium",
+        "flyimpact:flies/blaze"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.dragon_fruit.relations"
+    }
+  ]
+}

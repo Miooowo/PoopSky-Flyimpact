@@ -1,0 +1,32 @@
+{
+  "name": "fly_type.poopsky.lime",
+  "icon": "poopsky:fly[poopsky:fly_type=\"lime\"]",
+  "category": "flyimpact:dye",
+  "sortnum": 12,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.lime.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"white\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"green\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"lime\"]",
+      "text": "patchouli.flyimpact.fly.lime.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/white",
+        "flyimpact:flies/green",
+        "flyimpact:flies/emerald",
+        "flyimpact:flies/wheat"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.lime.relations"
+    }
+  ]
+}

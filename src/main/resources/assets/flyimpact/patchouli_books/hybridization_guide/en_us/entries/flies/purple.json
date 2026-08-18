@@ -1,0 +1,33 @@
+{
+  "name": "fly_type.poopsky.purple",
+  "icon": "poopsky:fly[poopsky:fly_type=\"purple\"]",
+  "category": "flyimpact:dye",
+  "sortnum": 15,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.purple.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"red\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"blue\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"purple\"]",
+      "text": "patchouli.flyimpact.fly.purple.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/red",
+        "flyimpact:flies/blue",
+        "flyimpact:flies/magenta",
+        "flyimpact:flies/ender",
+        "flyimpact:flies/fluorite"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.purple.relations"
+    }
+  ]
+}

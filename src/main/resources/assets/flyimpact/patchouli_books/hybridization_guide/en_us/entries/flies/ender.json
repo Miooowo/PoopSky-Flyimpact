@@ -1,0 +1,30 @@
+{
+  "name": "fly_type.poopsky.ender",
+  "icon": "poopsky:fly[poopsky:fly_type=\"ender\"]",
+  "category": "flyimpact:special",
+  "sortnum": 2,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.ender.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"purple\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"cyan\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"ender\"]",
+      "text": "patchouli.flyimpact.fly.ender.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/purple",
+        "flyimpact:flies/cyan"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.ender.relations"
+    }
+  ]
+}

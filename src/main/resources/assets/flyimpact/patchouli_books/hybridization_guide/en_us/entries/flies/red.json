@@ -1,0 +1,25 @@
+{
+  "name": "fly_type.poopsky.red",
+  "icon": "poopsky:fly[poopsky:fly_type=\"red\"]",
+  "category": "flyimpact:dye",
+  "sortnum": 3,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.red.text"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/pink",
+        "flyimpact:flies/orange",
+        "flyimpact:flies/yellow",
+        "flyimpact:flies/purple",
+        "flyimpact:flies/fairy"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.red.relations"
+    }
+  ]
+}

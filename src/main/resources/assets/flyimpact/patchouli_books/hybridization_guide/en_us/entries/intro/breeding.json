@@ -1,0 +1,18 @@
+{
+  "name": "patchouli.flyimpact.entry.breeding",
+  "icon": "poopsky:breeding_chest",
+  "category": "flyimpact:intro",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.entry.breeding.page0"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "poopsky:breeding_chest",
+      "link_recipe": true,
+      "text": "patchouli.flyimpact.entry.breeding.page1"
+    }
+  ]
+}

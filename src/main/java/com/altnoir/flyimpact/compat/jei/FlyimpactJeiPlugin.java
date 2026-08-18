@@ -1,6 +1,7 @@
 package com.altnoir.flyimpact.compat.jei;
 
 import com.altnoir.flyimpact.Flyimpact;
+import com.altnoir.flyimpact.item.FlyimpactItems;
 import com.altnoir.poopsky.compat.jei.BreedingChestRecipeCategory;
 import com.altnoir.poopsky.content.item.p.FlyItem;
 import mezz.jei.api.constants.VanillaTypes;
@@ -10,6 +11,8 @@ import mezz.jei.api.registration.IRecipeRegistration;
 import mezz.jei.api.registration.IRecipeTransferRegistration;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
+import net.neoforged.fml.ModList;
 import org.jetbrains.annotations.NotNull;
 
 @JeiPlugin
@@ -44,5 +47,11 @@ public class FlyimpactJeiPlugin implements IModPlugin {
                 FlyItem.withType(Flyimpact.FLY_TYPE_FAIRY),
                 VanillaTypes.ITEM_STACK,
                 Component.translatable("jei.flyimpact.fly_desc.fairy"));
+        if (ModList.get().isLoaded("patchouli")) {
+            registration.addIngredientInfo(
+                    new ItemStack(FlyimpactItems.HYBRIDIZATION_GUIDE.get()),
+                    VanillaTypes.ITEM_STACK,
+                    Component.translatable("tooltip.flyimpact.hybridization_guide"));
+        }
     }
 }

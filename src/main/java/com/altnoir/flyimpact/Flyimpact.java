@@ -1,6 +1,8 @@
 package com.altnoir.flyimpact;
 
+import com.altnoir.flyimpact.event.GiveHybridizationGuide;
 import com.altnoir.flyimpact.item.FlyimpactItems;
+import com.altnoir.flyimpact.recipe.FlyimpactRecipes;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
@@ -31,11 +33,11 @@ public class Flyimpact {
 
     public Flyimpact(IEventBus modEventBus, ModContainer modContainer) {
         FlyimpactItems.register(modEventBus);
-        FlyimpactComponents.register(modEventBus);
+        FlyimpactRecipes.register(modEventBus);
         NeoForge.EVENT_BUS.addListener(FlyTypeInjector::onAddReloadListeners);
         NeoForge.EVENT_BUS.addListener(FlyTypeInjector::onDatapackSync);
         NeoForge.EVENT_BUS.addListener(FlyFeeding::onEntityInteract);
-        NeoForge.EVENT_BUS.addListener(FlyLineageEvents::onItemTooltip);
+        NeoForge.EVENT_BUS.addListener(GiveHybridizationGuide::onPlayerLoggedIn);
         LOGGER.info("PoopSky: Flyimpact loaded");
     }
 }

@@ -1,0 +1,32 @@
+{
+  "name": "fly_type.poopsky.brown",
+  "icon": "poopsky:fly[poopsky:fly_type=\"brown\"]",
+  "category": "flyimpact:dye",
+  "sortnum": 8,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.brown.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"black\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"yellow\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"brown\"]",
+      "text": "patchouli.flyimpact.fly.brown.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/black",
+        "flyimpact:flies/yellow",
+        "flyimpact:flies/leather",
+        "flyimpact:flies/rotten_flesh"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.brown.relations"
+    }
+  ]
+}

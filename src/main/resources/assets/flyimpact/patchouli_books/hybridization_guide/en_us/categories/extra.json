@@ -1,0 +1,6 @@
+{
+  "name": "patchouli.flyimpact.category.extra",
+  "description": "patchouli.flyimpact.category.extra.desc",
+  "icon": "poopsky:fly[poopsky:fly_type=\"wheat\"]",
+  "sortnum": 4
+}

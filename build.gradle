@@ -73,6 +73,9 @@ dependencies {
     compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
     compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
     localRuntime "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
+
+    compileOnly "maven.modrinth:patchouli:${patchouli_version}"
+    localRuntime "maven.modrinth:patchouli:${patchouli_version}"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

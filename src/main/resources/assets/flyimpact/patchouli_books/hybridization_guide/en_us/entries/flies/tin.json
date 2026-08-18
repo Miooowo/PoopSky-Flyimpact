@@ -1,0 +1,32 @@
+{
+  "name": "fly_type.poopsky.tin",
+  "icon": "poopsky:fly[poopsky:fly_type=\"tin\"]",
+  "category": "flyimpact:ore",
+  "sortnum": 7,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.tin.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"light_gray\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"iron\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"tin\"]",
+      "text": "patchouli.flyimpact.fly.tin.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/light_gray",
+        "flyimpact:flies/iron",
+        "flyimpact:flies/lead"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.tin.relations"
+    }
+  ],
+  "flag": "mod:mekanism"
+}

@@ -1,0 +1,35 @@
+{
+  "name": "fly_type.poopsky.yellow",
+  "icon": "poopsky:fly[poopsky:fly_type=\"yellow\"]",
+  "category": "flyimpact:dye",
+  "sortnum": 6,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.yellow.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"red\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"green\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"yellow\"]",
+      "text": "patchouli.flyimpact.fly.yellow.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/red",
+        "flyimpact:flies/green",
+        "flyimpact:flies/orange",
+        "flyimpact:flies/dragon_fruit",
+        "flyimpact:flies/brown",
+        "flyimpact:flies/glowstone",
+        "flyimpact:flies/pumpkin"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.yellow.relations"
+    }
+  ]
+}

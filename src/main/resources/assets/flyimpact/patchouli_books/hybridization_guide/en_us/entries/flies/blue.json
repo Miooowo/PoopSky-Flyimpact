@@ -1,0 +1,23 @@
+{
+  "name": "fly_type.poopsky.blue",
+  "icon": "poopsky:fly[poopsky:fly_type=\"blue\"]",
+  "category": "flyimpact:dye",
+  "sortnum": 5,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.blue.text"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/light_blue",
+        "flyimpact:flies/purple",
+        "flyimpact:flies/cyan"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.blue.relations"
+    }
+  ]
+}

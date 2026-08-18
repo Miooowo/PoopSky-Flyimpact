@@ -1,0 +1,30 @@
+{
+  "name": "fly_type.poopsky.wheat",
+  "icon": "poopsky:fly[poopsky:fly_type=\"wheat\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 3,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.wheat.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"green\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"lime\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"wheat\"]",
+      "text": "patchouli.flyimpact.fly.wheat.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/green",
+        "flyimpact:flies/lime"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.wheat.relations"
+    }
+  ]
+}

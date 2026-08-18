@@ -1,0 +1,35 @@
+{
+  "name": "patchouli.flyimpact.entry.overview",
+  "icon": "flyimpact:hybridization_guide",
+  "category": "flyimpact:intro",
+  "priority": true,
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.entry.overview.page0"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.entry.overview.page1"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "flyimpact:hybridization_guide",
+      "link_recipe": true,
+      "text": "patchouli.flyimpact.entry.overview.page2"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/normal",
+        "flyimpact:flies/white",
+        "flyimpact:flies/red",
+        "flyimpact:flies/green",
+        "flyimpact:flies/blue"
+      ],
+      "title": "patchouli.flyimpact.related_starters",
+      "text": "patchouli.flyimpact.entry.overview.relations"
+    }
+  ]
+}

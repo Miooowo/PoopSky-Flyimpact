@@ -49,6 +49,11 @@ public final class UpgradeAwareContainer implements Container, FlyBarrelContaine
     }
 
     @Override
+    public int getMaxStackSize() {
+        return inner.getMaxStackSize();
+    }
+
+    @Override
     public void setChanged() {
         inner.setChanged();
     }
@@ -76,10 +81,5 @@ public final class UpgradeAwareContainer implements Container, FlyBarrelContaine
     @Override
     public void stopOpen(Player player) {
         inner.stopOpen(player);
-    }
-
-    @Override
-    public int getMaxStackSize() {
-        return inner.getMaxStackSize();
     }
 }

@@ -1,0 +1,39 @@
+{
+  "components": [
+    {
+      "type": "patchouli:header",
+      "text": "#title",
+      "x": -1,
+      "y": -1
+    },
+    {
+      "type": "patchouli:custom",
+      "class": "com.altnoir.flyimpact.compat.patchouli.FlyEntryItemComponent",
+      "item": "#parent1",
+      "framed": true,
+      "x": 20,
+      "y": 24
+    },
+    {
+      "type": "patchouli:custom",
+      "class": "com.altnoir.flyimpact.compat.patchouli.FlyEntryItemComponent",
+      "item": "#parent2",
+      "framed": true,
+      "x": 50,
+      "y": 24
+    },
+    {
+      "type": "patchouli:custom",
+      "class": "com.altnoir.flyimpact.compat.patchouli.FlyEntryItemComponent",
+      "item": "#result",
+      "framed": true,
+      "x": 90,
+      "y": 24
+    },
+    {
+      "type": "patchouli:text",
+      "text": "#text",
+      "y": 50
+    }
+  ]
+}

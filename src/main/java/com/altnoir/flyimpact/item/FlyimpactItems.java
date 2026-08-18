@@ -8,6 +8,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -31,10 +32,16 @@ public final class FlyimpactItems {
     public static final DeferredHolder<Item, UpgradeModuleItem> DIAMOND_SPEED_UPGRADE = speed("diamond_speed_upgrade", 300);
     public static final DeferredHolder<Item, UpgradeModuleItem> OBSIDIAN_SPEED_UPGRADE = speed("obsidian_speed_upgrade", 400);
 
+    public static final DeferredHolder<Item, HybridizationGuideItem> HYBRIDIZATION_GUIDE =
+            ITEMS.register("hybridization_guide", () -> new HybridizationGuideItem(new Item.Properties().stacksTo(1)));
+
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TAB = TABS.register("main", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.flyimpact"))
             .icon(() -> new ItemStack(POOP_YIELD_UPGRADE.get()))
             .displayItems((parameters, output) -> {
+                if (ModList.get().isLoaded("patchouli")) {
+                    output.accept(HYBRIDIZATION_GUIDE.get());
+                }
                 output.accept(POOP_YIELD_UPGRADE.get());
                 output.accept(COPPER_YIELD_UPGRADE.get());
                 output.accept(IRON_YIELD_UPGRADE.get());

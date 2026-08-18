@@ -1,0 +1,31 @@
+{
+  "name": "fly_type.poopsky.light_blue",
+  "icon": "poopsky:fly[poopsky:fly_type=\"light_blue\"]",
+  "category": "flyimpact:dye",
+  "sortnum": 13,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.light_blue.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"white\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"blue\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"light_blue\"]",
+      "text": "patchouli.flyimpact.fly.light_blue.recipe"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/white",
+        "flyimpact:flies/blue",
+        "flyimpact:flies/certus"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.light_blue.relations"
+    }
+  ]
+}

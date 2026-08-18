@@ -1,0 +1,27 @@
+{
+  "name": "fly_type.poopsky.white",
+  "icon": "poopsky:fly[poopsky:fly_type=\"white\"]",
+  "category": "flyimpact:dye",
+  "sortnum": 1,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.white.text"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "flyimpact:flies/gray",
+        "flyimpact:flies/light_blue",
+        "flyimpact:flies/light_gray",
+        "flyimpact:flies/lime",
+        "flyimpact:flies/pink",
+        "flyimpact:flies/copper",
+        "flyimpact:flies/leather"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.white.relations"
+    }
+  ]
+}

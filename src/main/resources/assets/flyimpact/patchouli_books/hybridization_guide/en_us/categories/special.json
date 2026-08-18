@@ -1,0 +1,6 @@
+{
+  "name": "patchouli.flyimpact.category.special",
+  "description": "patchouli.flyimpact.category.special.desc",
+  "icon": "poopsky:fly[poopsky:fly_type=\"ender\"]",
+  "sortnum": 3
+}
