@@ -18,11 +18,12 @@
       "text": "patchouli.flyimpact.fly.gray.recipe"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/white",
         "flyimpact:flies/black",
-        "flyimpact:flies/light_gray"
+        "flyimpact:flies/light_gray",
+        "flyimpact:flies/coal"
       ],
       "title": "patchouli.flyimpact.tree",
       "text": "patchouli.flyimpact.fly.gray.relations"

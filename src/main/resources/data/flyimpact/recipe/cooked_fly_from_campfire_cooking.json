@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": {
+    "type": "flyimpact:any_fly"
+  },
+  "result": {
+    "count": 1,
+    "id": "flyimpact:cooked_fly"
+  }
+}

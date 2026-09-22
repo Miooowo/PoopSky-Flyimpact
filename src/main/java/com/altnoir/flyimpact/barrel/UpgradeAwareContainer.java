@@ -20,12 +20,18 @@ public final class UpgradeAwareContainer implements Container, FlyBarrelContaine
 
     @Override
     public int getContainerSize() {
-        return inner.getContainerSize();
+        return access.flyimpact$inventorySlots();
     }
 
     @Override
     public boolean isEmpty() {
-        return inner.isEmpty();
+        int size = getContainerSize();
+        for (int slot = 0; slot < size; slot++) {
+            if (!getItem(slot).isEmpty()) {
+                return false;
+            }
+        }
+        return true;
     }
 
     @Override

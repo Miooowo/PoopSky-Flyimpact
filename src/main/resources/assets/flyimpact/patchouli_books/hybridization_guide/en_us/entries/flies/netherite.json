@@ -18,10 +18,11 @@
       "text": "patchouli.flyimpact.fly.netherite.recipe"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/emerald",
-        "flyimpact:flies/diamond"
+        "flyimpact:flies/diamond",
+        "flyimpact:flies/ghast_tear"
       ],
       "title": "patchouli.flyimpact.tree",
       "text": "patchouli.flyimpact.fly.netherite.relations"

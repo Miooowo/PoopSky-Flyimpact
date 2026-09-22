@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": { "item": "minecraft:glass" },
+    "B": { "item": "minecraft:bucket" },
+    "C": { "item": "flyimpact:poop_yield_upgrade" }
+  },
+  "pattern": [
+    "GGG",
+    "GBG",
+    "GCG"
+  ],
+  "result": { "count": 1, "id": "flyimpact:fluid_storage_upgrade" }
+}

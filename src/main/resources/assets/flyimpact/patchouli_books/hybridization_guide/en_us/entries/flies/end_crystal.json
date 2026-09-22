@@ -1,0 +1,30 @@
+{
+  "name": "fly_type.poopsky.end_crystal",
+  "icon": "poopsky:fly[poopsky:fly_type=\"end_crystal\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 22,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.end_crystal.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"ghast_tear\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"ender_eye\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"end_crystal\"]",
+      "text": "patchouli.flyimpact.fly.end_crystal.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/ghast_tear",
+        "flyimpact:flies/ender_eye"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.end_crystal.relations"
+    }
+  ]
+}

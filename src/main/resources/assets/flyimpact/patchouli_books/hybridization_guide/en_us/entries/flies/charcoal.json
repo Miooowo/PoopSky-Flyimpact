@@ -1,0 +1,31 @@
+{
+  "name": "fly_type.poopsky.charcoal",
+  "icon": "poopsky:fly[poopsky:fly_type=\"charcoal\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 19,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.charcoal.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"coal\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"black\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"charcoal\"]",
+      "text": "patchouli.flyimpact.fly.charcoal.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/coal",
+        "flyimpact:flies/black",
+        "flyimpact:flies/sand"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.charcoal.relations"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "fly_type.poopsky.egg",
+  "icon": "poopsky:fly[poopsky:fly_type=\"egg\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 18,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.egg.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"wheat\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"rotten_flesh\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"egg\"]",
+      "text": "patchouli.flyimpact.fly.egg.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/wheat",
+        "flyimpact:flies/rotten_flesh"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.egg.relations"
+    }
+  ]
+}

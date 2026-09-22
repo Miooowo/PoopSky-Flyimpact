@@ -3,15 +3,27 @@
   "minVersion": "0.8",
   "package": "com.altnoir.flyimpact.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [
+    "mixins": [
+    "BlockEntityTypeMixin",
+    "BreedingChestBlockEntityMixin",
+    "FlyBarrelBlockEntityAccessor",
     "FlyBarrelBlockEntityMixin",
+    "FlyBarrelInventoryMixin",
     "FlyBarrelBlockMixin",
-    "FlyBarrelMenuMixin"
+    "FlyBarrelContainerProxyMixin",
+    "FlyBarrelMenuMixin",
+    "FlyCatcherItemMixin",
+    "FlyEntityMixin",
+    "PFlyRecipesMixin"
   ],
   "client": [
     "BreedingChestScreenMixin",
     "FlyBarrelScreenMixin",
-    "FlyBarrelRecipeCategoryMixin"
+    "FlyBarrelRecipeCategoryMixin",
+    "FlyRendererMixin",
+    "LogoRendererMixin",
+    "SplashManagerMixin",
+    "TitleScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

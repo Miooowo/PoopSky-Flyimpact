@@ -1,0 +1,8 @@
+{
+  "type": "poopsky:fly_barrel",
+  "fly_type": "end_crystal",
+  "result": {
+    "count": 1,
+    "id": "flyimpact:end_crystal_shard"
+  }
+}

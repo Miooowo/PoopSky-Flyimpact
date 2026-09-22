@@ -18,7 +18,7 @@
       "text": "patchouli.flyimpact.fly.magenta.recipe"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/purple",
         "flyimpact:flies/pink"

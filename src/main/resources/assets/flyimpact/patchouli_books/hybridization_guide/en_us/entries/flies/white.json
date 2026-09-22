@@ -10,7 +10,7 @@
       "text": "patchouli.flyimpact.fly.white.text"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/gray",
         "flyimpact:flies/light_blue",
@@ -18,7 +18,8 @@
         "flyimpact:flies/lime",
         "flyimpact:flies/pink",
         "flyimpact:flies/copper",
-        "flyimpact:flies/leather"
+        "flyimpact:flies/leather",
+        "flyimpact:flies/diorite"
       ],
       "title": "patchouli.flyimpact.tree",
       "text": "patchouli.flyimpact.fly.white.relations"

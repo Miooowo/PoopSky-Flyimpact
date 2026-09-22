@@ -18,7 +18,7 @@
       "text": "patchouli.flyimpact.fly.uranium.recipe"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/dragon_fruit",
         "flyimpact:flies/emerald"

@@ -13,6 +13,12 @@
       "item": "poopsky:breeding_chest",
       "link_recipe": true,
       "text": "patchouli.flyimpact.entry.breeding.page1"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "flyimpact:simple_breeding_chest",
+      "link_recipe": true,
+      "text": "patchouli.flyimpact.entry.breeding.page2"
     }
   ]
 }

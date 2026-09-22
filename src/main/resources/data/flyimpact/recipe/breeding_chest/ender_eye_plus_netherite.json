@@ -1,0 +1,7 @@
+{
+  "type": "poopsky:breeding_chest",
+  "chance": 0.2,
+  "parent1": "ender_eye",
+  "parent2": "netherite",
+  "result": "ghast_tear"
+}

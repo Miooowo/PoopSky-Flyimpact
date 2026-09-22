@@ -18,10 +18,12 @@
       "text": "patchouli.flyimpact.fly.blaze.recipe"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/dragon_fruit",
-        "flyimpact:flies/orange"
+        "flyimpact:flies/orange",
+        "flyimpact:flies/chili",
+        "flyimpact:flies/ender_eye"
       ],
       "title": "patchouli.flyimpact.tree",
       "text": "patchouli.flyimpact.fly.blaze.relations"

@@ -18,12 +18,14 @@
       "text": "patchouli.flyimpact.fly.light_gray.recipe"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/white",
         "flyimpact:flies/gray",
         "flyimpact:flies/iron",
-        "flyimpact:flies/tin"
+        "flyimpact:flies/tin",
+        "flyimpact:flies/diorite",
+        "flyimpact:flies/granite"
       ],
       "title": "patchouli.flyimpact.tree",
       "text": "patchouli.flyimpact.fly.light_gray.relations"

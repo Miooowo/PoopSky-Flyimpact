@@ -10,9 +10,11 @@
       "text": "patchouli.flyimpact.fly.normal.text"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
-        "flyimpact:flies/black"
+        "flyimpact:flies/black",
+        "flyimpact:flies/altnoir",
+        "flyimpact:flies/steve"
       ],
       "title": "patchouli.flyimpact.tree",
       "text": "patchouli.flyimpact.fly.normal.relations"

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": { "item": "minecraft:redstone" },
+    "F": { "item": "minecraft:furnace" },
+    "C": { "item": "flyimpact:poop_yield_upgrade" }
+  },
+  "pattern": [
+    "RRR",
+    "RFR",
+    "RCR"
+  ],
+  "result": { "count": 1, "id": "flyimpact:energy_storage_upgrade" }
+}

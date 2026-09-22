@@ -1,0 +1,33 @@
+{
+  "name": "fly_type.poopsky.diorite",
+  "icon": "poopsky:fly[poopsky:fly_type=\"diorite\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 8,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.diorite.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"white\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"light_gray\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"diorite\"]",
+      "text": "patchouli.flyimpact.fly.diorite.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/white",
+        "flyimpact:flies/light_gray",
+        "flyimpact:flies/andesite",
+        "flyimpact:flies/granite",
+        "flyimpact:flies/cobblestone"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.diorite.relations"
+    }
+  ]
+}

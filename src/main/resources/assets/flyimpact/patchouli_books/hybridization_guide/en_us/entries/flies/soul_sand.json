@@ -1,0 +1,31 @@
+{
+  "name": "fly_type.poopsky.soul_sand",
+  "icon": "poopsky:fly[poopsky:fly_type=\"soul_sand\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 40,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.soul_sand.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"sand\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"black\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"soul_sand\"]",
+      "text": "patchouli.flyimpact.fly.soul_sand.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/sand",
+        "flyimpact:flies/black",
+        "flyimpact:flies/nether_wart"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.soul_sand.relations"
+    }
+  ]
+}

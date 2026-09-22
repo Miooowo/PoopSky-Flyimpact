@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "flyimpact:copper_fly_barrel"
+    }
+  },
+  "pattern": [
+    "III",
+    "ICI",
+    "III"
+  ],
+  "result": {
+    "count": 1,
+    "id": "flyimpact:iron_fly_barrel"
+  }
+}

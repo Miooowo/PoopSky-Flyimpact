@@ -1,0 +1,32 @@
+{
+  "name": "fly_type.poopsky.ender_eye",
+  "icon": "poopsky:fly[poopsky:fly_type=\"ender_eye\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 20,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.ender_eye.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"ender\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"blaze\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"ender_eye\"]",
+      "text": "patchouli.flyimpact.fly.ender_eye.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/ender",
+        "flyimpact:flies/blaze",
+        "flyimpact:flies/ghast_tear",
+        "flyimpact:flies/end_crystal"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.ender_eye.relations"
+    }
+  ]
+}

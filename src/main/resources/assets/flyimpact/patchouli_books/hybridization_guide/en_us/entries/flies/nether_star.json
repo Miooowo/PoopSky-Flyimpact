@@ -1,0 +1,30 @@
+{
+  "name": "fly_type.poopsky.nether_star",
+  "icon": "poopsky:fly[poopsky:fly_type=\"nether_star\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 24,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.nether_star.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"soul_soil\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"ghast_tear\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"nether_star\"]",
+      "text": "patchouli.flyimpact.fly.nether_star.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/soul_soil",
+        "flyimpact:flies/ghast_tear"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.nether_star.relations"
+    }
+  ]
+}

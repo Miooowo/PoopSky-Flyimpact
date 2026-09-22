@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "B": {
+      "item": "poopsky:fly_barrel"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "CBC",
+    "CCC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "flyimpact:copper_fly_barrel"
+  }
+}

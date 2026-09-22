@@ -1,0 +1,30 @@
+{
+  "name": "fly_type.poopsky.obsidian",
+  "icon": "poopsky:fly[poopsky:fly_type=\"obsidian\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 6,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.obsidian.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"diamond\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"black\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"obsidian\"]",
+      "text": "patchouli.flyimpact.fly.obsidian.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/diamond",
+        "flyimpact:flies/black"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.obsidian.relations"
+    }
+  ]
+}

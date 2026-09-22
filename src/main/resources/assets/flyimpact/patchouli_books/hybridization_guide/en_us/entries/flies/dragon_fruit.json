@@ -18,13 +18,14 @@
       "text": "patchouli.flyimpact.fly.dragon_fruit.recipe"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/green",
         "flyimpact:flies/yellow",
         "flyimpact:flies/glowstone",
         "flyimpact:flies/uranium",
-        "flyimpact:flies/blaze"
+        "flyimpact:flies/blaze",
+        "flyimpact:flies/chili"
       ],
       "title": "patchouli.flyimpact.tree",
       "text": "patchouli.flyimpact.fly.dragon_fruit.relations"

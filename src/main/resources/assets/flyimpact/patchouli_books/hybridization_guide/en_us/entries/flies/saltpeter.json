@@ -1,0 +1,26 @@
+{
+  "name": "fly_type.poopsky.saltpeter",
+  "icon": "poopsky:fly[poopsky:fly_type=\"saltpeter\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 25,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.saltpeter.text"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "poopsky:saltpeter_shard",
+      "text": "patchouli.flyimpact.fly.saltpeter.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/snowball"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.saltpeter.relations"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "fly_type.poopsky.soul_soil",
+  "icon": "poopsky:fly[poopsky:fly_type=\"soul_soil\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 23,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.soul_soil.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"dirt\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"black\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"soul_soil\"]",
+      "text": "patchouli.flyimpact.fly.soul_soil.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/dirt",
+        "flyimpact:flies/black",
+        "flyimpact:flies/nether_star"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.soul_soil.relations"
+    }
+  ]
+}

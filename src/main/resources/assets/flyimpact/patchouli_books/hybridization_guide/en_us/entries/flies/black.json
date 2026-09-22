@@ -18,13 +18,18 @@
       "text": "patchouli.flyimpact.fly.black.recipe"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/normal",
         "flyimpact:flies/copper",
         "flyimpact:flies/gray",
         "flyimpact:flies/brown",
-        "flyimpact:flies/sky_dust"
+        "flyimpact:flies/sky_dust",
+        "flyimpact:flies/obsidian",
+        "flyimpact:flies/andesite",
+        "flyimpact:flies/charcoal",
+        "flyimpact:flies/soul_soil",
+        "flyimpact:flies/soul_sand"
       ],
       "title": "patchouli.flyimpact.tree",
       "text": "patchouli.flyimpact.fly.black.relations"

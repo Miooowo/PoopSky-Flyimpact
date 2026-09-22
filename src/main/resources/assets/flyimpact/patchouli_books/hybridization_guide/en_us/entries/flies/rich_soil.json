@@ -1,0 +1,31 @@
+{
+  "name": "fly_type.poopsky.rich_soil",
+  "icon": "poopsky:fly[poopsky:fly_type=\"rich_soil\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 17,
+  "read_by_default": true,
+  "flag": "mod:farmersdelight",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.rich_soil.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"altnoir\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"dirt\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"rich_soil\"]",
+      "text": "patchouli.flyimpact.fly.rich_soil.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/altnoir",
+        "flyimpact:flies/dirt"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.rich_soil.relations"
+    }
+  ]
+}

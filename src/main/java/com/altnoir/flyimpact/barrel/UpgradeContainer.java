@@ -13,44 +13,49 @@ public class UpgradeContainer implements Container {
 
     @Override
     public int getContainerSize() {
-        return 1;
+        return this.access.flyimpact$upgradeSlots();
     }
 
     @Override
     public boolean isEmpty() {
-        return access.flyimpact$getUpgrade().isEmpty();
+        for (int slot = 0; slot < getContainerSize(); slot++) {
+            if (!this.access.flyimpact$getUpgrade(slot).isEmpty()) {
+                return false;
+            }
+        }
+        return true;
     }
 
     @Override
     public ItemStack getItem(int slot) {
-        return slot == 0 ? access.flyimpact$getUpgrade() : ItemStack.EMPTY;
+        return slot >= 0 && slot < getContainerSize() ? this.access.flyimpact$getUpgrade(slot) : ItemStack.EMPTY;
     }
 
     @Override
     public ItemStack removeItem(int slot, int amount) {
-        ItemStack current = access.flyimpact$getUpgrade();
-        if (slot != 0 || current.isEmpty()) {
+        ItemStack current = getItem(slot);
+        if (current.isEmpty()) {
             return ItemStack.EMPTY;
         }
         ItemStack split = current.split(amount);
-        access.flyimpact$setUpgrade(current);
+        this.access.flyimpact$setUpgrade(slot, current);
         return split;
     }
 
     @Override
     public ItemStack removeItemNoUpdate(int slot) {
-        if (slot != 0) {
+        ItemStack current = getItem(slot);
+        if (current.isEmpty()) {
             return ItemStack.EMPTY;
         }
-        ItemStack current = access.flyimpact$getUpgrade();
-        access.flyimpact$setUpgrade(ItemStack.EMPTY);
+        this.access.flyimpact$setUpgrade(slot, ItemStack.EMPTY);
         return current;
     }
 
     @Override
     public void setItem(int slot, ItemStack stack) {
-        if (slot == 0) {
-            access.flyimpact$setUpgrade(stack);
+        if (slot >= 0 && slot < getContainerSize()) {
+            this.access.flyimpact$setUpgrade(slot, stack);
         }
     }
 
@@ -65,6 +70,8 @@ public class UpgradeContainer implements Container {
 
     @Override
     public void clearContent() {
-        access.flyimpact$setUpgrade(ItemStack.EMPTY);
+        for (int slot = 0; slot < getContainerSize(); slot++) {
+            this.access.flyimpact$setUpgrade(slot, ItemStack.EMPTY);
+        }
     }
 }

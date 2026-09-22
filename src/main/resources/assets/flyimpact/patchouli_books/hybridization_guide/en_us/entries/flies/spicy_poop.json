@@ -1,0 +1,30 @@
+{
+  "name": "fly_type.poopsky.spicy_poop",
+  "icon": "poopsky:fly[poopsky:fly_type=\"spicy_poop\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 12,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.spicy_poop.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"altnoir\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"chili\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"spicy_poop\"]",
+      "text": "patchouli.flyimpact.fly.spicy_poop.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/altnoir",
+        "flyimpact:flies/chili"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.spicy_poop.relations"
+    }
+  ]
+}

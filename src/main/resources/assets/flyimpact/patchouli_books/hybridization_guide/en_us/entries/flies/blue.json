@@ -10,11 +10,13 @@
       "text": "patchouli.flyimpact.fly.blue.text"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/light_blue",
         "flyimpact:flies/purple",
-        "flyimpact:flies/cyan"
+        "flyimpact:flies/cyan",
+        "flyimpact:flies/snowball",
+        "flyimpact:flies/poolime"
       ],
       "title": "patchouli.flyimpact.tree",
       "text": "patchouli.flyimpact.fly.blue.relations"

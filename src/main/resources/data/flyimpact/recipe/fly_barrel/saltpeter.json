@@ -1,0 +1,8 @@
+{
+  "type": "poopsky:fly_barrel",
+  "fly_type": "saltpeter",
+  "result": {
+    "count": 1,
+    "id": "poopsky:saltpeter_shard"
+  }
+}

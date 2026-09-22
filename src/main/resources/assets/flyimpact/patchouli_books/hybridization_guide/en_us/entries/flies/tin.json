@@ -18,7 +18,7 @@
       "text": "patchouli.flyimpact.fly.tin.recipe"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/light_gray",
         "flyimpact:flies/iron",

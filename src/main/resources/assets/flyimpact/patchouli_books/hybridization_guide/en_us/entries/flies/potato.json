@@ -1,0 +1,18 @@
+{
+  "name": "fly_type.poopsky.potato",
+  "icon": "poopsky:fly[poopsky:fly_type=\"potato\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 34,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.potato.text"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:potato",
+      "text": "patchouli.flyimpact.fly.potato.recipe"
+    }
+  ]
+}

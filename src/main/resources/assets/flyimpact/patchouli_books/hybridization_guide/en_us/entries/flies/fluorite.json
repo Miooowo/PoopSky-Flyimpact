@@ -18,7 +18,7 @@
       "text": "patchouli.flyimpact.fly.fluorite.recipe"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/purple",
         "flyimpact:flies/osmium"

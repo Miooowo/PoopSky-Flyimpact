@@ -1,0 +1,32 @@
+{
+  "name": "fly_type.poopsky.ghast_tear",
+  "icon": "poopsky:fly[poopsky:fly_type=\"ghast_tear\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 21,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.ghast_tear.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"ender_eye\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"netherite\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"ghast_tear\"]",
+      "text": "patchouli.flyimpact.fly.ghast_tear.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/ender_eye",
+        "flyimpact:flies/netherite",
+        "flyimpact:flies/end_crystal",
+        "flyimpact:flies/nether_star"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.ghast_tear.relations"
+    }
+  ]
+}

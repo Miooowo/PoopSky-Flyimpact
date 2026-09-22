@@ -20,7 +20,7 @@
       "text": "patchouli.flyimpact.entry.overview.page2"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/normal",
         "flyimpact:flies/white",

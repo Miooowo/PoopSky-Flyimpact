@@ -1,8 +1,10 @@
 package com.altnoir.flyimpact.mixin;
 
+import com.altnoir.flyimpact.barrel.BarrelTier;
 import com.altnoir.flyimpact.barrel.FlyBarrelContainerAccess;
 import com.altnoir.flyimpact.barrel.UpgradeContainer;
 import com.altnoir.flyimpact.item.UpgradeModuleItem;
+import com.altnoir.flyimpact.menu.FlyBarrelStorageMenu;
 import com.altnoir.flyimpact.upgrade.UpgradePanelLayout;
 import com.altnoir.poopsky.client.inventory.FlyBarrelMenu;
 import net.minecraft.world.Container;
@@ -12,6 +14,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.inventory.MenuType;
+import net.minecraft.world.inventory.SimpleContainerData;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
@@ -22,13 +25,16 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(FlyBarrelMenu.class)
-public abstract class FlyBarrelMenuMixin extends AbstractContainerMenu {
+public abstract class FlyBarrelMenuMixin extends AbstractContainerMenu implements FlyBarrelStorageMenu {
     @Unique
     private static final int FLYIMPACT_YIELD_INDEX = 41;
     @Unique
     private static final int FLYIMPACT_PLAYER_START = 5;
     @Unique
     private static final int FLYIMPACT_PLAYER_END = 41;
+
+    @Unique
+    private ContainerData flyimpact$storageData;
 
     protected FlyBarrelMenuMixin(MenuType<?> menuType, int containerId) {
         super(menuType, containerId);
@@ -54,6 +60,58 @@ public abstract class FlyBarrelMenuMixin extends AbstractContainerMenu {
                 return 1;
             }
         });
+        if (machine instanceof FlyBarrelContainerAccess access) {
+            this.flyimpact$storageData = access.flyimpact$upgradeAccess().flyimpact$storageData();
+        } else {
+            this.flyimpact$storageData = new SimpleContainerData(BarrelTier.STORAGE_DATA_SIZE);
+        }
+        this.addDataSlots(this.flyimpact$storageData);
+    }
+
+    @Override
+    public boolean flyimpact$hasFluidUpgrade() {
+        return UpgradeModuleItem.hasFluid(flyimpact$upgradeStack());
+    }
+
+    @Override
+    public boolean flyimpact$hasEnergyUpgrade() {
+        return UpgradeModuleItem.hasEnergy(flyimpact$upgradeStack());
+    }
+
+    @Override
+    public int flyimpact$energyStored() {
+        return this.flyimpact$storageData == null ? 0 : this.flyimpact$storageData.get(BarrelTier.STORAGE_ENERGY);
+    }
+
+    @Override
+    public int flyimpact$energyCapacity() {
+        int cap = this.flyimpact$storageData == null ? 0 : this.flyimpact$storageData.get(BarrelTier.STORAGE_ENERGY_CAP);
+        return cap > 0 ? cap : BarrelTier.ENERGY_CAPACITY;
+    }
+
+    @Override
+    public int flyimpact$fluidAmount() {
+        return this.flyimpact$storageData == null ? 0 : this.flyimpact$storageData.get(BarrelTier.STORAGE_FLUID_AMOUNT);
+    }
+
+    @Override
+    public int flyimpact$fluidId() {
+        return this.flyimpact$storageData == null ? 0 : this.flyimpact$storageData.get(BarrelTier.STORAGE_FLUID_ID);
+    }
+
+    @Override
+    public void flyimpact$interactTank(Player player) {
+        Container machine = this.slots.isEmpty() ? null : this.slots.get(0).container;
+        if (machine instanceof FlyBarrelContainerAccess access) {
+            access.flyimpact$upgradeAccess().flyimpact$interactTank(player);
+        }
+    }
+
+    @Unique
+    private ItemStack flyimpact$upgradeStack() {
+        return this.slots.size() > FLYIMPACT_YIELD_INDEX
+                ? this.slots.get(FLYIMPACT_YIELD_INDEX).getItem()
+                : ItemStack.EMPTY;
     }
 
     @Inject(method = "quickMoveStack", at = @At("HEAD"), cancellable = true)

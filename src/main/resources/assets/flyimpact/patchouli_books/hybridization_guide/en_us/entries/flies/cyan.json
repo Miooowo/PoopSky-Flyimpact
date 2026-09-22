@@ -18,7 +18,7 @@
       "text": "patchouli.flyimpact.fly.cyan.recipe"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/green",
         "flyimpact:flies/blue",

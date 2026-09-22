@@ -1,0 +1,26 @@
+{
+  "name": "fly_type.poopsky.roundworm",
+  "icon": "poopsky:fly[poopsky:fly_type=\"roundworm\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 31,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.roundworm.text"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "poopsky:roundworm",
+      "text": "patchouli.flyimpact.fly.roundworm.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/sand"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.roundworm.relations"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "fly_type.poopsky.steve",
+  "icon": "poopsky:fly[poopsky:fly_type=\"steve\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 14,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.steve.text"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/normal"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.steve.relations"
+    }
+  ]
+}

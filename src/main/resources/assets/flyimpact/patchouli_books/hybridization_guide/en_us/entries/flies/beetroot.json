@@ -1,0 +1,26 @@
+{
+  "name": "fly_type.poopsky.beetroot",
+  "icon": "poopsky:fly[poopsky:fly_type=\"beetroot\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 35,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.beetroot.text"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:beetroot",
+      "text": "patchouli.flyimpact.fly.beetroot.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/nether_wart"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.beetroot.relations"
+    }
+  ]
+}

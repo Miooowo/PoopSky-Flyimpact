@@ -1,0 +1,35 @@
+{
+  "name": "fly_type.poopsky.nether_wart",
+  "icon": "poopsky:fly[poopsky:fly_type=\"nether_wart\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 41,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.nether_wart.text"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:nether_wart",
+      "text": "patchouli.flyimpact.fly.nether_wart.feed"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"beetroot\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"soul_sand\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"nether_wart\"]",
+      "text": "patchouli.flyimpact.fly.nether_wart.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/beetroot",
+        "flyimpact:flies/soul_sand"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.nether_wart.relations"
+    }
+  ]
+}

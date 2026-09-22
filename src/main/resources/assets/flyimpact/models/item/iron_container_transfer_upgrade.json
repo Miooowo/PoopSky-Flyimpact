@@ -1,0 +1,4 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": { "layer0": "flyimpact:item/iron_container_transfer_upgrade" }
+}

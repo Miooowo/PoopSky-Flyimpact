@@ -1,0 +1,25 @@
+{
+  "name": "fly_type.poopsky.altnoir",
+  "icon": "poopsky:fly[poopsky:fly_type=\"altnoir\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 7,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.altnoir.text"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/normal",
+        "flyimpact:flies/spicy_poop",
+        "flyimpact:flies/rich_soil",
+        "flyimpact:flies/poolime",
+        "flyimpact:flies/golden_poop"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.altnoir.relations"
+    }
+  ]
+}

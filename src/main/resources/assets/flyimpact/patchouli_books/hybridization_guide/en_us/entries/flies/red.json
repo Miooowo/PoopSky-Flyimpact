@@ -10,7 +10,7 @@
       "text": "patchouli.flyimpact.fly.red.text"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/pink",
         "flyimpact:flies/orange",

@@ -18,12 +18,13 @@
       "text": "patchouli.flyimpact.fly.brown.recipe"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/black",
         "flyimpact:flies/yellow",
         "flyimpact:flies/leather",
-        "flyimpact:flies/rotten_flesh"
+        "flyimpact:flies/rotten_flesh",
+        "flyimpact:flies/dirt"
       ],
       "title": "patchouli.flyimpact.tree",
       "text": "patchouli.flyimpact.fly.brown.relations"

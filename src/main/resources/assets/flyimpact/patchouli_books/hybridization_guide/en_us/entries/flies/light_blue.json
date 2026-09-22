@@ -18,7 +18,7 @@
       "text": "patchouli.flyimpact.fly.light_blue.recipe"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/white",
         "flyimpact:flies/blue",

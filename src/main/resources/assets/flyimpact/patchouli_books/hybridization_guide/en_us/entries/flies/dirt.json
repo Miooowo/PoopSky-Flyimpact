@@ -1,0 +1,33 @@
+{
+  "name": "fly_type.poopsky.dirt",
+  "icon": "poopsky:fly[poopsky:fly_type=\"dirt\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 15,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.dirt.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"brown\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"rotten_flesh\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"dirt\"]",
+      "text": "patchouli.flyimpact.fly.dirt.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/brown",
+        "flyimpact:flies/rotten_flesh",
+        "flyimpact:flies/grass_block",
+        "flyimpact:flies/rich_soil",
+        "flyimpact:flies/soul_soil"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.dirt.relations"
+    }
+  ]
+}

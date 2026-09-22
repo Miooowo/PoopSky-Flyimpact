@@ -1,0 +1,30 @@
+{
+  "name": "fly_type.poopsky.poolime",
+  "icon": "poopsky:fly[poopsky:fly_type=\"poolime\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 27,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.poolime.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"blue\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"altnoir\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"poolime\"]",
+      "text": "patchouli.flyimpact.fly.poolime.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/blue",
+        "flyimpact:flies/altnoir"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.poolime.relations"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "type": "poopsky:breeding_chest",
+  "chance": 0.2,
+  "parent1": "soul_soil",
+  "parent2": "ghast_tear",
+  "result": "nether_star"
+}

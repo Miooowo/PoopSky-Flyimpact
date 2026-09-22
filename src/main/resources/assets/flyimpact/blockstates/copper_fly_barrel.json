@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "flyimpact:block/copper_fly_barrel",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "flyimpact:block/copper_fly_barrel",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "flyimpact:block/copper_fly_barrel",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "flyimpact:block/copper_fly_barrel",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "flyimpact:block/copper_fly_barrel"
+    },
+    "facing=west": {
+      "model": "flyimpact:block/copper_fly_barrel",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

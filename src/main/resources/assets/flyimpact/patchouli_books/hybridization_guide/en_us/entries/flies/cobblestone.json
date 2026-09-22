@@ -1,0 +1,47 @@
+{
+  "name": "fly_type.poopsky.cobblestone",
+  "icon": "poopsky:fly[poopsky:fly_type=\"cobblestone\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 32,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.cobblestone.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"diorite\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"andesite\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"cobblestone\"]",
+      "text": "patchouli.flyimpact.fly.cobblestone.recipe_da"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"diorite\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"granite\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"cobblestone\"]",
+      "text": "patchouli.flyimpact.fly.cobblestone.recipe_dg"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"andesite\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"granite\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"cobblestone\"]",
+      "text": "patchouli.flyimpact.fly.cobblestone.recipe_ag"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/diorite",
+        "flyimpact:flies/andesite",
+        "flyimpact:flies/granite"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.cobblestone.relations"
+    }
+  ]
+}

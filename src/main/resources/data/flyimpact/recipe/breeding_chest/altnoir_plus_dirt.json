@@ -1,0 +1,13 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "poopsky:breeding_chest",
+  "chance": 0.2,
+  "parent1": "altnoir",
+  "parent2": "dirt",
+  "result": "rich_soil"
+}

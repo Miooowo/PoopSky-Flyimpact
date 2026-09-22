@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "sophisticatedbackpacks"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " F ",
+    "IBI",
+    " C "
+  ],
+  "key": {
+    "F": {
+      "item": "poopsky:fly_barrel"
+    },
+    "B": {
+      "item": "sophisticatedbackpacks:upgrade_base"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:chest"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "flyimpact:fly_barrel_upgrade"
+  }
+}

@@ -18,7 +18,7 @@
       "text": "patchouli.flyimpact.fly.zinc.recipe"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/cyan",
         "flyimpact:flies/iron"

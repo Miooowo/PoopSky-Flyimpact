@@ -1,0 +1,8 @@
+{
+  "type": "poopsky:fly_barrel",
+  "fly_type": "gravel",
+  "result": {
+    "count": 1,
+    "id": "minecraft:gravel"
+  }
+}

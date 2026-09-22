@@ -64,6 +64,11 @@ public class HybridizationGuideRecipe extends CustomRecipe {
     }
 
     @Override
+    public boolean isSpecial() {
+        return false;
+    }
+
+    @Override
     public ItemStack getResultItem(HolderLookup.Provider registries) {
         return new ItemStack(FlyimpactItems.HYBRIDIZATION_GUIDE.get());
     }
@@ -72,7 +77,7 @@ public class HybridizationGuideRecipe extends CustomRecipe {
     public NonNullList<Ingredient> getIngredients() {
         NonNullList<Ingredient> ingredients = NonNullList.create();
         ingredients.add(Ingredient.of(Items.BOOK));
-        ingredients.add(Ingredient.of(poopskyItem("fly")));
+        ingredients.add(Ingredient.of(FlyItem.withType(FlyTypes.NORMAL.id())));
         ingredients.add(Ingredient.of(poopskyItem("maggots_seeds")));
         return ingredients;
     }

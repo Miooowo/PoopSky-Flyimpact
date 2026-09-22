@@ -1,0 +1,31 @@
+{
+  "name": "fly_type.poopsky.chili",
+  "icon": "poopsky:fly[poopsky:fly_type=\"chili\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 11,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.chili.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"dragon_fruit\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"blaze\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"chili\"]",
+      "text": "patchouli.flyimpact.fly.chili.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/dragon_fruit",
+        "flyimpact:flies/blaze",
+        "flyimpact:flies/spicy_poop"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.chili.relations"
+    }
+  ]
+}

@@ -18,7 +18,7 @@
       "text": "patchouli.flyimpact.fly.leather.recipe"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/brown",
         "flyimpact:flies/white"

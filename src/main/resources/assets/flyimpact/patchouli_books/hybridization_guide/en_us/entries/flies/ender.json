@@ -18,10 +18,11 @@
       "text": "patchouli.flyimpact.fly.ender.recipe"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/purple",
-        "flyimpact:flies/cyan"
+        "flyimpact:flies/cyan",
+        "flyimpact:flies/ender_eye"
       ],
       "title": "patchouli.flyimpact.tree",
       "text": "patchouli.flyimpact.fly.ender.relations"

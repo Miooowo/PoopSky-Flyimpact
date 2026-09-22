@@ -1,0 +1,7 @@
+{
+  "type": "poopsky:breeding_chest",
+  "chance": 0.2,
+  "parent1": "saltpeter",
+  "parent2": "blue",
+  "result": "snowball"
+}

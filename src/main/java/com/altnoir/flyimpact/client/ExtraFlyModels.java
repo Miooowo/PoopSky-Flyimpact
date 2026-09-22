@@ -18,6 +18,9 @@ import java.util.Map;
 public final class ExtraFlyModels {
     private static final ResourceLocation FLY_ITEM_ID = ResourceLocation.fromNamespaceAndPath("poopsky", "fly");
     private static final ResourceLocation FLY_TYPE_COMPONENT_ID = ResourceLocation.fromNamespaceAndPath("poopsky", "fly_type");
+    private static final Map<String, ResourceLocation> OVERRIDE_MODELS = Map.of(
+            "blue", ResourceLocation.fromNamespaceAndPath(Flyimpact.MOD_ID, "item/flytest")
+    );
 
     private ExtraFlyModels() {
     }
@@ -33,9 +36,16 @@ public final class ExtraFlyModels {
                 ModelResourceLocation.STANDALONE_VARIANT);
     }
 
+    private static ModelResourceLocation standalone(ResourceLocation model) {
+        return new ModelResourceLocation(model, ModelResourceLocation.STANDALONE_VARIANT);
+    }
+
     private static void onRegisterAdditional(ModelEvent.RegisterAdditional event) {
         for (String flyType : Flyimpact.EXTRA_FLY_TYPES) {
             event.register(modelLocation(flyType));
+        }
+        for (ResourceLocation model : OVERRIDE_MODELS.values()) {
+            event.register(standalone(model));
         }
     }
 
@@ -50,6 +60,14 @@ public final class ExtraFlyModels {
                 continue;
             }
             extraModels.put(flyType, extraModel);
+        }
+        for (Map.Entry<String, ResourceLocation> override : OVERRIDE_MODELS.entrySet()) {
+            BakedModel overrideModel = models.get(standalone(override.getValue()));
+            if (overrideModel == null) {
+                Flyimpact.LOGGER.warn("Missing fly override model {} for type {}", override.getValue(), override.getKey());
+                continue;
+            }
+            extraModels.put(override.getKey(), overrideModel);
         }
         if (extraModels.isEmpty()) {
             return;

@@ -1,0 +1,8 @@
+{
+  "type": "poopsky:fly_barrel",
+  "fly_type": "roundworm",
+  "result": {
+    "count": 1,
+    "id": "poopsky:roundworm"
+  }
+}

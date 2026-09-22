@@ -18,10 +18,11 @@
       "text": "patchouli.flyimpact.fly.wheat.recipe"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/green",
-        "flyimpact:flies/lime"
+        "flyimpact:flies/lime",
+        "flyimpact:flies/egg"
       ],
       "title": "patchouli.flyimpact.tree",
       "text": "patchouli.flyimpact.fly.wheat.relations"

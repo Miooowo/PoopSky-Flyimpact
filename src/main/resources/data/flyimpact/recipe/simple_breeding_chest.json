@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "P": {
+      "item": "poopsky:poopsky:poop_block"
+    },
+    "C": {
+      "item": "poopsky:breeding_chest"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "PCP",
+    "PPP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "flyimpact:simple_breeding_chest"
+  }
+}

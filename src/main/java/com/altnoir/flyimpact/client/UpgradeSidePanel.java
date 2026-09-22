@@ -17,25 +17,12 @@ public final class UpgradeSidePanel {
         }
         int x = leftPos + UpgradePanelLayout.PANEL_OFFSET_X;
         int y = topPos + UpgradePanelLayout.PANEL_OFFSET_Y;
-        blit(graphics, x, y, 0, 0, UpgradePanelLayout.PANEL_WIDTH, UpgradePanelLayout.TOP_CAP);
-        for (int i = 0; i < slotCount; i++) {
-            blit(
-                    graphics,
-                    x,
-                    y + UpgradePanelLayout.TOP_CAP + i * UpgradePanelLayout.SLOT_SPACING,
-                    0,
-                    UpgradePanelLayout.TOP_CAP,
-                    UpgradePanelLayout.PANEL_WIDTH,
-                    UpgradePanelLayout.SLOT_SPACING);
-        }
-        blit(
-                graphics,
-                x,
-                y + UpgradePanelLayout.TOP_CAP + slotCount * UpgradePanelLayout.SLOT_SPACING,
-                0,
-                UpgradePanelLayout.TOP_CAP + UpgradePanelLayout.SLOT_SPACING,
-                UpgradePanelLayout.PANEL_WIDTH,
-                UpgradePanelLayout.BOTTOM_CAP);
+        int body = UpgradePanelLayout.heightWithoutBottom(slotCount);
+        blit(graphics, x, y, 0, 0, UpgradePanelLayout.PANEL_WIDTH, UpgradePanelLayout.PANEL_TOP);
+        blit(graphics, x, y + UpgradePanelLayout.PANEL_TOP, 0, UpgradePanelLayout.PANEL_TOP,
+                UpgradePanelLayout.PANEL_BODY_WIDTH, body - UpgradePanelLayout.PANEL_TOP);
+        blit(graphics, x, y + body, 0, UpgradePanelLayout.PANEL_BOTTOM_V,
+                UpgradePanelLayout.PANEL_BODY_WIDTH, UpgradePanelLayout.PANEL_BOTTOM);
     }
 
     public static boolean contains(double mouseX, double mouseY, int leftPos, int topPos, int slotCount) {
@@ -44,9 +31,8 @@ public final class UpgradeSidePanel {
         }
         int x = leftPos + UpgradePanelLayout.PANEL_OFFSET_X;
         int y = topPos + UpgradePanelLayout.PANEL_OFFSET_Y;
-        int width = UpgradePanelLayout.PANEL_WIDTH;
-        int height = UpgradePanelLayout.panelHeight(slotCount);
-        return mouseX >= x && mouseX < x + width && mouseY >= y && mouseY < y + height;
+        return mouseX >= x && mouseX < x + UpgradePanelLayout.PANEL_WIDTH
+                && mouseY >= y && mouseY < y + UpgradePanelLayout.panelHeight(slotCount);
     }
 
     private static void blit(GuiGraphics graphics, int x, int y, int u, int v, int width, int height) {

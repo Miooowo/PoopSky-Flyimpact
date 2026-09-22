@@ -1,5 +1,6 @@
 package com.altnoir.flyimpact.mixin;
 
+import com.altnoir.flyimpact.client.FlyBarrelStorageGauges;
 import com.altnoir.flyimpact.client.UpgradeSidePanel;
 import com.altnoir.flyimpact.item.UpgradeModuleItem;
 import com.altnoir.poopsky.client.inventory.FlyBarrelMenu;
@@ -28,11 +29,14 @@ public abstract class FlyBarrelScreenMixin extends AbstractContainerScreen<FlyBa
         super(menu, playerInventory, title);
     }
 
-    @Inject(method = "renderBg", at = @At("HEAD"))
-    private void flyimpact$drawUpgradePanel(GuiGraphics graphics, float partialTick, int mouseX, int mouseY, CallbackInfo ci) {
+    @Inject(method = "renderBg", at = @At("TAIL"))
+    private void flyimpact$drawStorageGauges(GuiGraphics graphics, float partialTick, int mouseX, int mouseY, CallbackInfo ci) {
         int x = (this.width - this.imageWidth) / 2;
         int y = (this.height - this.imageHeight) / 2;
         UpgradeSidePanel.render(graphics, x, y, 1);
+        if (this.menu instanceof com.altnoir.flyimpact.menu.FlyBarrelStorageMenu storage) {
+            FlyBarrelStorageGauges.render(graphics, x, y, storage);
+        }
     }
 
     @Override
@@ -40,7 +44,33 @@ public abstract class FlyBarrelScreenMixin extends AbstractContainerScreen<FlyBa
         if (UpgradeSidePanel.contains(mouseX, mouseY, guiLeft, guiTop, 1)) {
             return false;
         }
+        if (this.menu instanceof com.altnoir.flyimpact.menu.FlyBarrelStorageMenu storage
+                && FlyBarrelStorageGauges.contains(mouseX, mouseY, guiLeft, guiTop, storage)) {
+            return false;
+        }
         return super.hasClickedOutside(mouseX, mouseY, guiLeft, guiTop, mouseButton);
+    }
+
+    @Override
+    public boolean mouseClicked(double mouseX, double mouseY, int button) {
+        if (this.menu instanceof com.altnoir.flyimpact.menu.FlyBarrelStorageMenu storage) {
+            int x = (this.width - this.imageWidth) / 2;
+            int y = (this.height - this.imageHeight) / 2;
+            if (FlyBarrelStorageGauges.clickTank(this.menu, storage, x, y, mouseX, mouseY)) {
+                return true;
+            }
+        }
+        return super.mouseClicked(mouseX, mouseY, button);
+    }
+
+    @Inject(method = "render", at = @At("TAIL"))
+    private void flyimpact$storageTooltips(GuiGraphics graphics, int mouseX, int mouseY, float partialTick, CallbackInfo ci) {
+        if (!(this.menu instanceof com.altnoir.flyimpact.menu.FlyBarrelStorageMenu storage)) {
+            return;
+        }
+        int x = (this.width - this.imageWidth) / 2;
+        int y = (this.height - this.imageHeight) / 2;
+        FlyBarrelStorageGauges.renderTooltips(graphics, this.font, mouseX, mouseY, x, y, storage);
     }
 
     @Inject(
@@ -68,6 +98,16 @@ public abstract class FlyBarrelScreenMixin extends AbstractContainerScreen<FlyBa
         }
         if (yield > 0) {
             lines.add(Component.translatable("tooltip.flyimpact.yield_bonus", yield).withStyle(ChatFormatting.GOLD));
+        }
+        int transferMul = UpgradeModuleItem.transferMultiplier(upgrade);
+        if (transferMul > 0) {
+            lines.add(Component.translatable("tooltip.flyimpact.transfer_enabled", transferMul).withStyle(ChatFormatting.GREEN));
+        }
+        if (UpgradeModuleItem.hasFluid(upgrade)) {
+            lines.add(Component.translatable("tooltip.flyimpact.fluid_enabled").withStyle(ChatFormatting.BLUE));
+        }
+        if (UpgradeModuleItem.hasEnergy(upgrade)) {
+            lines.add(Component.translatable("tooltip.flyimpact.energy_enabled").withStyle(ChatFormatting.RED));
         }
         graphics.renderComponentTooltip(this.font, lines, mouseX, mouseY);
         ci.cancel();

@@ -1,0 +1,31 @@
+{
+  "name": "fly_type.poopsky.sand",
+  "icon": "poopsky:fly[poopsky:fly_type=\"sand\"]",
+  "category": "flyimpact:extra",
+  "sortnum": 39,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "patchouli.flyimpact.fly.sand.text"
+    },
+    {
+      "type": "flyimpact:hybridization",
+      "title": "patchouli.flyimpact.hybridization",
+      "parent1": "poopsky:fly[poopsky:fly_type=\"roundworm\"]",
+      "parent2": "poopsky:fly[poopsky:fly_type=\"charcoal\"]",
+      "result": "poopsky:fly[poopsky:fly_type=\"sand\"]",
+      "text": "patchouli.flyimpact.fly.sand.recipe"
+    },
+    {
+      "type": "flyimpact:relations",
+      "entries": [
+        "flyimpact:flies/roundworm",
+        "flyimpact:flies/charcoal",
+        "flyimpact:flies/soul_sand"
+      ],
+      "title": "patchouli.flyimpact.tree",
+      "text": "patchouli.flyimpact.fly.sand.relations"
+    }
+  ]
+}

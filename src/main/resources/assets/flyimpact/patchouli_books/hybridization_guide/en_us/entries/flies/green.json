@@ -10,13 +10,14 @@
       "text": "patchouli.flyimpact.fly.green.text"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/lime",
         "flyimpact:flies/yellow",
         "flyimpact:flies/cyan",
         "flyimpact:flies/dragon_fruit",
-        "flyimpact:flies/wheat"
+        "flyimpact:flies/wheat",
+        "flyimpact:flies/grass_block"
       ],
       "title": "patchouli.flyimpact.tree",
       "text": "patchouli.flyimpact.fly.green.relations"

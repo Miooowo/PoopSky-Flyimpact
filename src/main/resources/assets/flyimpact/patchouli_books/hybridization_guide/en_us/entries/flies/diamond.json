@@ -18,13 +18,15 @@
       "text": "patchouli.flyimpact.fly.diamond.recipe"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/gold",
         "flyimpact:flies/emerald",
         "flyimpact:flies/netherite",
         "flyimpact:flies/certus",
-        "flyimpact:flies/osmium"
+        "flyimpact:flies/osmium",
+        "flyimpact:flies/obsidian",
+        "flyimpact:flies/coal"
       ],
       "title": "patchouli.flyimpact.tree",
       "text": "patchouli.flyimpact.fly.diamond.relations"

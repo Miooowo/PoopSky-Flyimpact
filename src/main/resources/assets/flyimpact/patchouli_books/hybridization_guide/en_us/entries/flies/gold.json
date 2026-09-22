@@ -18,12 +18,13 @@
       "text": "patchouli.flyimpact.fly.gold.recipe"
     },
     {
-      "type": "patchouli:relations",
+      "type": "flyimpact:relations",
       "entries": [
         "flyimpact:flies/glowstone",
         "flyimpact:flies/copper",
         "flyimpact:flies/emerald",
-        "flyimpact:flies/diamond"
+        "flyimpact:flies/diamond",
+        "flyimpact:flies/golden_poop"
       ],
       "title": "patchouli.flyimpact.tree",
       "text": "patchouli.flyimpact.fly.gold.relations"
