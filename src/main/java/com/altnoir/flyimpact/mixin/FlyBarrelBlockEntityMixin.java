@@ -421,8 +421,10 @@ public abstract class FlyBarrelBlockEntityMixin implements FlyBarrelUpgradeAcces
                 public int get(int index) {
                     flyimpact$ensureBuffers();
                     return switch (index) {
-                        case BarrelTier.STORAGE_ENERGY -> flyimpact$energy.getEnergyStored();
-                        case BarrelTier.STORAGE_ENERGY_CAP -> flyimpact$energy.getMaxEnergyStored();
+                        case BarrelTier.STORAGE_ENERGY_LOW -> flyimpact$energy.getEnergyStored() & 0xFFFF;
+                        case BarrelTier.STORAGE_ENERGY_HIGH -> flyimpact$energy.getEnergyStored() >>> 16;
+                        case BarrelTier.STORAGE_ENERGY_CAP_LOW -> flyimpact$energy.getMaxEnergyStored() & 0xFFFF;
+                        case BarrelTier.STORAGE_ENERGY_CAP_HIGH -> flyimpact$energy.getMaxEnergyStored() >>> 16;
                         case BarrelTier.STORAGE_FLUID_AMOUNT -> flyimpact$tank.getFluidAmount();
                         case BarrelTier.STORAGE_FLUID_ID -> BuiltInRegistries.FLUID.getId(flyimpact$tank.getFluid().getFluid());
                         default -> 0;

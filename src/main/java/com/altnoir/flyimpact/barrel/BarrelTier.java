@@ -32,11 +32,18 @@ public enum BarrelTier {
     public static final int MIN_INTERVAL = 20;
     public static final int FLUID_CAPACITY = 32000;
     public static final int ENERGY_CAPACITY = 100000;
-    public static final int STORAGE_DATA_SIZE = 4;
-    public static final int STORAGE_ENERGY = 0;
-    public static final int STORAGE_ENERGY_CAP = 1;
-    public static final int STORAGE_FLUID_AMOUNT = 2;
-    public static final int STORAGE_FLUID_ID = 3;
+    // ContainerData sends each entry as a signed 16-bit value. Energy needs two entries.
+    public static final int STORAGE_DATA_SIZE = 6;
+    public static final int STORAGE_ENERGY_LOW = 0;
+    public static final int STORAGE_ENERGY_HIGH = 1;
+    public static final int STORAGE_ENERGY_CAP_LOW = 2;
+    public static final int STORAGE_ENERGY_CAP_HIGH = 3;
+    public static final int STORAGE_FLUID_AMOUNT = 4;
+    public static final int STORAGE_FLUID_ID = 5;
+
+    public static int joinedStorageValue(int low, int high) {
+        return (low & 0xFFFF) | ((high & 0xFFFF) << 16);
+    }
 
     public static int intervalFor(int flyCount, int speedPercent) {
         int stackBonus = Math.max(0, flyCount - 1) * STACK_BONUS_PER_ITEM;
