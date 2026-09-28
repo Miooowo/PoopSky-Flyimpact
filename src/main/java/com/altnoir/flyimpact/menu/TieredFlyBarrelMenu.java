@@ -156,12 +156,16 @@ public final class TieredFlyBarrelMenu extends AbstractContainerMenu implements 
 
     @Override
     public int flyimpact$energyStored() {
-        return this.storageData.get(BarrelTier.STORAGE_ENERGY);
+        return BarrelTier.joinedStorageValue(
+                this.storageData.get(BarrelTier.STORAGE_ENERGY_LOW),
+                this.storageData.get(BarrelTier.STORAGE_ENERGY_HIGH));
     }
 
     @Override
     public int flyimpact$energyCapacity() {
-        int cap = this.storageData.get(BarrelTier.STORAGE_ENERGY_CAP);
+        int cap = BarrelTier.joinedStorageValue(
+                this.storageData.get(BarrelTier.STORAGE_ENERGY_CAP_LOW),
+                this.storageData.get(BarrelTier.STORAGE_ENERGY_CAP_HIGH));
         return cap > 0 ? cap : BarrelTier.ENERGY_CAPACITY;
     }
 

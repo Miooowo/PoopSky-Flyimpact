@@ -80,12 +80,16 @@ public abstract class FlyBarrelMenuMixin extends AbstractContainerMenu implement
 
     @Override
     public int flyimpact$energyStored() {
-        return this.flyimpact$storageData == null ? 0 : this.flyimpact$storageData.get(BarrelTier.STORAGE_ENERGY);
+        return this.flyimpact$storageData == null ? 0 : BarrelTier.joinedStorageValue(
+                this.flyimpact$storageData.get(BarrelTier.STORAGE_ENERGY_LOW),
+                this.flyimpact$storageData.get(BarrelTier.STORAGE_ENERGY_HIGH));
     }
 
     @Override
     public int flyimpact$energyCapacity() {
-        int cap = this.flyimpact$storageData == null ? 0 : this.flyimpact$storageData.get(BarrelTier.STORAGE_ENERGY_CAP);
+        int cap = this.flyimpact$storageData == null ? 0 : BarrelTier.joinedStorageValue(
+                this.flyimpact$storageData.get(BarrelTier.STORAGE_ENERGY_CAP_LOW),
+                this.flyimpact$storageData.get(BarrelTier.STORAGE_ENERGY_CAP_HIGH));
         return cap > 0 ? cap : BarrelTier.ENERGY_CAPACITY;
     }
 

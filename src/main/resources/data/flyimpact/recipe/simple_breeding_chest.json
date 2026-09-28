@@ -3,7 +3,7 @@
   "category": "redstone",
   "key": {
     "P": {
-      "item": "poopsky:poopsky:poop_block"
+      "item": "poopsky:poop_block"
     },
     "C": {
       "item": "poopsky:breeding_chest"
